@@ -1,3 +1,14 @@
+
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1e40af;
+    --accent: #14b8a6;
+    --bg-light: #f9fafb;
+    --bg-dark: #111827;
+    --text-dark: #1f2937;
+    --text-light: #e5e7eb;
+}
+
 /* Base Reset */
 * {
     box-sizing: border-box;
@@ -7,16 +18,15 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #2c2c2c;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     line-height: 1.6;
     font-size: 16px;
 }
 
-/* Header */
 header {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     text-align: center;
     padding: 1.5rem 1rem;
     font-size: 1.5rem;
@@ -24,28 +34,26 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 1rem 0;
-    background-color: #2a2a2a;
+    background-color: #1f2937;
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: var(--text-light);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #1e90ff;
+    color: var(--primary);
 }
 
-/* Section Styling */
 section {
     padding: 40px 20px;
     max-width: 1000px;
@@ -53,7 +61,6 @@ section {
     text-align: center;
 }
 
-/* Project Card */
 .project {
     background: #ffffff;
     padding: 20px;
@@ -69,20 +76,18 @@ section {
     transform: translateY(-5px);
 }
 
-/* Themed Cards */
 .project.roommate {
-    background-color: #faf4e3;
+    background-color: #fefce8; /* light yellow */
 }
 
 .project.bookstore {
-    background-color: #e3f2fd;
+    background-color: #eff6ff; /* light blue */
 }
 
 .project.dementia {
-    background-color: #e6f4ea;
+    background-color: #ecfdf5; /* light green */
 }
 
-/* Profile Image */
 #about img {
     border-radius: 50%;
     max-width: 150px;
@@ -92,10 +97,9 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Button Styling */
 .btn {
     display: inline-block;
-    background-color: #007bff;
+    background-color: var(--primary);
     color: #ffffff;
     padding: 12px 25px;
     text-decoration: none;
@@ -107,14 +111,13 @@ section {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-hover);
     transform: scale(1.05);
 }
 
-/* Footer */
 footer {
-    background-color: #1a1a1a;
-    color: #ccc;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     text-align: center;
     padding: 1.2rem;
     font-size: 0.9rem;
@@ -123,33 +126,29 @@ footer {
 
 /* Dark Mode */
 .dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
 }
 
 .dark-mode header,
 .dark-mode footer {
-    background-color: #181818;
-    color: #ccc;
+    background-color: #0f172a;
 }
 
 .dark-mode nav ul {
-    background-color: #1f1f1f;
+    background-color: #1e293b;
 }
 
 .dark-mode nav ul li a {
-    color: #bbb;
+    color: #cbd5e1;
 }
 
 .dark-mode nav ul li a:hover {
-    color: #4da6ff;
+    color: var(--primary);
 }
 
 .dark-mode .project {
-    background-color: #2a2a2a;
-    color: #f0f0f0;
+    background-color: #1f2937;
+    color: var(--text-light);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
-
-
- 
